@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Moodle Assignments Finder",
+    "version": "1.00",
+    "description": "Copies and moves all of the moodle assignments to the top of the page for easier access. Prevents excess scrolling.",
+    "content_scripts":[
+        {
+            "matches":[
+                "https://wesmoodle.wesleyan.edu/course/*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}
